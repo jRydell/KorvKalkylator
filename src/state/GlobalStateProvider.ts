@@ -1,12 +1,12 @@
-import { useContext } from "react";
+import React, { createContext, useReducer } from "react";
+import reducer, { initialState } from "../state/reducer";
+import { GlobalStateContext } from "./GlobalStateContext";
 
-type GlobalStateProviderProp = {
+type GlobalStateProviderProps = {
   children: React.ReactNode;
 };
 
-import React from "react";
-
-export const GlobalStateProvider = ({ children }: GlobalStateProviderProp) => {
+const GlobalStateProvider = ({ children }: GlobalStateProviderProps) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
@@ -15,3 +15,5 @@ export const GlobalStateProvider = ({ children }: GlobalStateProviderProp) => {
     </GlobalStateContext.Provider>
   );
 };
+
+export default GlobalStateProvider;

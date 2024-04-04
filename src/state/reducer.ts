@@ -1,28 +1,22 @@
-export type SausageProperty = { name: string; cost: number };
+import { Action, GlobalState, Sausage } from "../types/types";
 
-export type Sausage = {
-  pizzaMenuOption: SausageProperty;
-  size: SausageProperty;
-  extraToppings: SausageProperty[];
-};
-
-export type Action =
-  | { type: "ADD_SAUSAGE"; payload: Sausage }
-  | { type: "REMOVE_SAUSAGE"; payload: Sausage }
-  | { type: "UPDATE_SAUSAGE"; payload: Sausage }
-  | { type: "CLEAR_ORDER" };
-
-export type GlobalState = {
-  pizzaOrder: Sausage[];
+export const initialState: GlobalState = {
+  sausageCart: [] as Sausage[],
 };
 
 const reducer = (state: GlobalState, action: Action): GlobalState => {
   switch (action.type) {
     case "ADD_SAUSAGE":
-
+      return {
+     //Add logic goes  here
+      };
     case "REMOVE_SAUSAGE":
-
+      return {
+    //Remove logic goes here
+        ),
+      };
     case "UPDATE_SAUSAGE":
+      // Update logic goes here
       return state;
     case "CLEAR_ORDER":
       return initialState;

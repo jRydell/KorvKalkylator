@@ -5,9 +5,10 @@
     { "name": "Körv med bröd", "price": 20 }
   ],
   "extra_toppings": [
-    { "name": "Räksallad", "price": 1 },
-    { "name": "Ketchup", "price": 2 },
-    { "name": "Senap", "price": 1 }
+    { "name": "Räksallad", "price": 10 },
+    { "name": "Ketchup", "price": 5 },
+    { "name": "Senap", "price": 5 },
+    { "name": "Extra mos", "price": 1 }
   ],
   "sizes": [
     {

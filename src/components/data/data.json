@@ -1,0 +1,26 @@
+{
+  "sausage_menu": [
+    { "name": "Hel Special", "cost": 30 },
+    { "name": "Halv Special", "cost": 20 },
+    { "name": "Körv med bröd", "cost": 20 }
+  ],
+  "extra_toppings": [
+    { "name": "Räksallad", "cost": 1 },
+    { "name": "Ketchup", "cost": 2 },
+    { "name": "Senap", "cost": 1 }
+  ],
+  "sizes": [
+    {
+      "name": "Liten",
+      "cost": 5
+    },
+    {
+      "name": "Lagom",
+      "cost": 8
+    },
+    {
+      "name": "Redig",
+      "cost": 10
+    }
+  ]
+}
